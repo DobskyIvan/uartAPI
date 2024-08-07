@@ -41,10 +41,12 @@ int main(void){
     uart1.functions->setStopBits = setStopBits_1;
     uart1.functions->uartEnable = enable_1;
     uart1.functions->uartGetByte = getByte_1;
+    uart1.functions->deinit = deinit_1;
 
     uart2.functions->setBaudrate = setBaudrate_2;
     uart2.functions->uartEnable = enable_2;
     uart2.functions->uartPutByte = putByte_2;
+    uart2.functions->deinit = deinit_2;
 
     { // tests
     uartSetBaudrate(&uart1, 9600);

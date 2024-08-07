@@ -56,7 +56,7 @@ eErrorCode uart1_putByte (uint8_t byteToSend){
     return E_NOERR;
 }
 
-uart1.functions->uart1_putByte;
+uart1.functions->uartPutByte = uart1_putByte;
 ```  
 
 Для корректной работы, необходимо в обработчике прерываний модуля вызывать соответствующие библиотечные функции CBTransmitterEmptyIT() и CBByteReceivedIT().  

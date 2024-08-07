@@ -101,34 +101,36 @@ $(function(){initNavTree('todo.html',''); initResizable(true); });
 <div class="contents">
 <div class="textblock"><dl class="reflist">
 <dt>Global <a class="el" href="group__uart__api.html#gafeb97a13c2d98d79a5de3cd4ea6a7158">CBByteReceivedIT</a>  (<a class="el" href="structs_uart_api.html" title="Интерфейсы объекта API.">sUartApi</a> *uartApi)</dt>
-<dd><a class="anchor" id="_todo000015"></a>add uartApi-&gt;functions-&gt;uartGetByte != NULL assert  </dd>
+<dd><a class="anchor" id="_todo000016"></a>add uartApi-&gt;functions-&gt;uartGetByte != NULL assert  </dd>
 <dt>Global <a class="el" href="group__uart__api.html#ga1dbe19d4b3e7dae305be9702f5111215">CBTransmitterEmptyIT</a>  (<a class="el" href="structs_uart_api.html" title="Интерфейсы объекта API.">sUartApi</a> *uartApi)</dt>
-<dd><a class="anchor" id="_todo000017"></a>add uartApi-&gt;functions-&gt;uartPutByte != NULL assert  </dd>
+<dd><a class="anchor" id="_todo000018"></a>add uartApi-&gt;functions-&gt;uartPutByte != NULL assert  </dd>
+<dt>Global <a class="el" href="group__uart__api.html#gaa835fe5ae290e68723e05746b8980510">uartDeinit</a>  (<a class="el" href="structs_uart_api.html" title="Интерфейсы объекта API.">sUartApi</a> *uartApi)</dt>
+<dd><a class="anchor" id="_todo000002"></a>add uartApi-&gt;functions-&gt;deinit != NULL assert  </dd>
 <dt>Global <a class="el" href="group__uart__api.html#ga24c4596f5bda4f7b201e12858507cce4">uartEnable</a>  (<a class="el" href="structs_uart_api.html" title="Интерфейсы объекта API.">sUartApi</a> *uartApi, eRxSwitch rxSwitch, eTxSwitch txSwitch)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000011"></a>add enum entry (rxSwitch, txSwitch) assert </p>
-<p class="interdd"><a class="anchor" id="_todo000012"></a></p>
-<p class="enddd"><a class="anchor" id="_todo000013"></a>add uartApi-&gt;functions-&gt;uartEnable != NULL assert  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000012"></a>add enum entry (rxSwitch, txSwitch) assert </p>
+<p class="interdd"><a class="anchor" id="_todo000013"></a></p>
+<p class="enddd"><a class="anchor" id="_todo000014"></a>add uartApi-&gt;functions-&gt;uartEnable != NULL assert  </p>
 </dd>
 <dt>Global <a class="el" href="group__uart__api.html#ga639170ef5b45f9d2ea25f56e946e1b96">uartInit</a>  (<a class="el" href="structs_uart_api.html" title="Интерфейсы объекта API.">sUartApi</a> *uartApi, <a class="el" href="group__uart__api.html#gaae7d5b630c496f0cebd018d6d553dbed" title="Коды ошибок">eErrorCode(*init)</a>(void))</dt>
 <dd><a class="anchor" id="_todo000001"></a>add init != NULL assert  </dd>
 <dt>Global <a class="el" href="group__uart__api.html#ga051a7b49552f579e2f5fdfbc94a78ceb">uartSend</a>  (<a class="el" href="structs_uart_api.html" title="Интерфейсы объекта API.">sUartApi</a> *uartApi, uint8_t *data, uint32_t dataLength)</dt>
-<dd><a class="anchor" id="_todo000016"></a>add uartApi-&gt;functions-&gt;uartPutByte != NULL assert  </dd>
+<dd><a class="anchor" id="_todo000017"></a>add uartApi-&gt;functions-&gt;uartPutByte != NULL assert  </dd>
 <dt>Global <a class="el" href="group__uart__api.html#ga9b47c1a616c37790b34300a636ccb445">uartSetBaudrate</a>  (<a class="el" href="structs_uart_api.html" title="Интерфейсы объекта API.">sUartApi</a> *uartApi, uint32_t baudrate)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000002"></a>add assert max, min baudrate </p>
-<p class="interdd"><a class="anchor" id="_todo000003"></a></p>
-<p class="enddd"><a class="anchor" id="_todo000004"></a>add uartApi-&gt;functions-&gt;setBaudrate != NULL assert  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000003"></a>add assert max, min baudrate </p>
+<p class="interdd"><a class="anchor" id="_todo000004"></a></p>
+<p class="enddd"><a class="anchor" id="_todo000005"></a>add uartApi-&gt;functions-&gt;setBaudrate != NULL assert  </p>
 </dd>
 <dt>Global <a class="el" href="group__uart__api.html#ga0f217f9a9f964a483ba574e67ffb2ec6">uartSetParity</a>  (<a class="el" href="structs_uart_api.html" title="Интерфейсы объекта API.">sUartApi</a> *uartApi, eParity parity)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000005"></a>add enum entry (parity) assert </p>
-<p class="interdd"><a class="anchor" id="_todo000006"></a></p>
-<p class="enddd"><a class="anchor" id="_todo000007"></a>add uartApi-&gt;functions-&gt;setParity != NULL assert  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000006"></a>add enum entry (parity) assert </p>
+<p class="interdd"><a class="anchor" id="_todo000007"></a></p>
+<p class="enddd"><a class="anchor" id="_todo000008"></a>add uartApi-&gt;functions-&gt;setParity != NULL assert  </p>
 </dd>
 <dt>Global <a class="el" href="group__uart__api.html#gab0b7b354b0d71f0c24c94b59d7f1e813">uartSetReceiveCB</a>  (<a class="el" href="structs_uart_api.html" title="Интерфейсы объекта API.">sUartApi</a> *uartApi, <a class="el" href="group__uart__api.html#gaae7d5b630c496f0cebd018d6d553dbed" title="Коды ошибок">eErrorCode(*ReceiveCB)</a>(uint8_t *receiveByte))</dt>
-<dd><a class="anchor" id="_todo000014"></a>add ReceiveCB != NULL assert  </dd>
+<dd><a class="anchor" id="_todo000015"></a>add ReceiveCB != NULL assert  </dd>
 <dt>Global <a class="el" href="group__uart__api.html#ga9db90a3bb5f0f9f21da783ce7e93df6d">uartSetStopBits</a>  (<a class="el" href="structs_uart_api.html" title="Интерфейсы объекта API.">sUartApi</a> *uartApi, eStopBits stopBits)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000008"></a>add enum entry (stopBits) assert </p>
-<p class="interdd"><a class="anchor" id="_todo000009"></a></p>
-<p class="enddd"><a class="anchor" id="_todo000010"></a>add uartApi-&gt;functions-&gt;setStopBits != NULL assert </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000009"></a>add enum entry (stopBits) assert </p>
+<p class="interdd"><a class="anchor" id="_todo000010"></a></p>
+<p class="enddd"><a class="anchor" id="_todo000011"></a>add uartApi-&gt;functions-&gt;setStopBits != NULL assert </p>
 </dd>
 </dl>
 </div></div><!-- contents -->

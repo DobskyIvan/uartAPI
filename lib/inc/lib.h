@@ -94,6 +94,7 @@ typedef struct{
     eErrorCode (*uartEnable) (eRxSwitch, eTxSwitch); /*!< Включение\выключение прерываний приемника\передатчика */
     eErrorCode (*uartPutByte) (uint8_t); /*!< Отправка байта данных */
     eErrorCode (*uartGetByte) (uint8_t *); /*!< Получение байта данных */
+    eErrorCode (*deinit) (void); /*!< Деинициализация периферийного блока */
 }sUartApiFunctions;
 
 /*! \ingroup uart_api

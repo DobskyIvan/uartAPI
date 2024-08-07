@@ -15,6 +15,18 @@ eErrorCode init_2 (void){
     return E_NOERR;
 }
 
+eErrorCode deinit_1 (void){
+        // do some platform-specific stuff
+    printf("callback from uart 1 denit()\n");
+    return E_NOERR;
+}
+
+eErrorCode deinit_2 (void){
+        // do some platform-specific stuff
+    printf("callback from uart 2 denit()\n");
+    return E_NOERR;
+}
+
 eErrorCode setBaudrate_1 (uint32_t baudrate){
     // do some platform-specific stuff
     (void) baudrate;

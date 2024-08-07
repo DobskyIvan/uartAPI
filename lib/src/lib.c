@@ -61,6 +61,8 @@ eErrorCode uartInit(sUartApi *uartApi, eErrorCode (*init) (void)){
 }
 
 eErrorCode uartDeinit(sUartApi *uartApi){
+    //! \todo add uartApi->functions->deinit != NULL assert
+    uartApi->functions->deinit(); // calling a user-defined function
     free(uartApi->config);
     free(uartApi->state);
     free(uartApi->temp);

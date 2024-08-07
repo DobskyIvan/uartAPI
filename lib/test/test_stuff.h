@@ -9,6 +9,8 @@ void uart2IRQ_Handler(); // async function
 
 eErrorCode init_1 (void);
 eErrorCode init_2 (void);
+eErrorCode deinit_1 (void);
+eErrorCode deinit_2 (void);
 eErrorCode setBaudrate_1 (uint32_t baudrate);
 eErrorCode setBaudrate_2 (uint32_t baudrate);
 eErrorCode setParity_1 (eParity eParity);
